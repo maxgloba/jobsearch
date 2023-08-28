@@ -1,5 +1,5 @@
 html, body, *{
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -11,23 +11,24 @@ h1, h2, h3, h4, h5, h6{
   font-style: normal;
 }
 h1{
-  // font-size: clamp(40px, cqi(80), 80px);
+  font-size: clamp(50px, cqi(120), 120px);
 }
 h2{
-  // font-size: clamp(40px, cqi(72), 72px);
+  font-size: clamp(35px, cqi(70), 70px);
 }
 h3{
-  // font-size: clamp(40px, cqi(56), 56px);
+  font-size: clamp(30px, cqi(50), 50px);
 }
 h4{
-  // font-size: 40px;
+  font-size: clamp(24px, cqi(40), 40px);
 }
 h5{
-  // font-size: 32px;
+  font-size: clamp(22px, cqi(30), 30px);
 }
 h6{
-  // font-size: 30px;
+  font-size: clamp(20px, cqi(24), 24px);
 }
 
 a{
+  font-size: clamp(16px, cqi(18), 18px);
 }

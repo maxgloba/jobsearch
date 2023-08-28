@@ -4,7 +4,7 @@
  */
 get_header(); ?>
 
-<div class="my-slider">
+<!-- <div class="my-slider">
   <div class="item">1</div>
   <div class="item">2</div>
   <div class="item">3</div>
@@ -12,7 +12,7 @@ get_header(); ?>
   <div class="item">5</div>
   <div class="item">6</div>
   <div class="item">7</div>
-</div>
+</div> -->
 
 <?php get_template_part( 'partials/block', 'banner' ); ?>
 <?php get_template_part( 'partials/block', 'about' ); ?>
