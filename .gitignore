@@ -32,10 +32,10 @@
 # /wp-content/uploads/
 
 # Log files
-# *.log
+*.log
 
 # htaccess
-# /.htaccess
+/.htaccess
 
 # All plugins
 #
@@ -58,5 +58,4 @@ node_modules/
 *.zip
 *.rar
 
-# gulpfile.js
-# .htaccess
+gulpfile.js
