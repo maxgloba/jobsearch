@@ -1,11 +1,8 @@
-body{
-}
-
 .container{
-  width: 1536px;
+  width: 1200px;
   max-width: 100%;
-  padding-left: vw(32px);
-  padding-right: vw(32px);
+  padding-left: res(10, 15);
+  padding-right: res(10, 15);
   margin-left: auto;
   margin-right: auto;
 }
@@ -16,11 +13,11 @@ body{
 }
 
 .col{
-  padding-left: vw(16px);
-  padding-right: vw(16px);
+  padding-left: res(10, 15);
+  padding-right: res(10, 15);
 }
 
-img{
+img, svg{
   max-width: 100%;
   height: auto;
 }

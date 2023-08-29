@@ -3,32 +3,60 @@ html, body, *{
 }
 
 body{
-  line-height: 1.4;
-  font-size: 16px;
+  line-height: 1.3;
+  font-size: res(16, 18);
+  color: var(--dark);
 }
 
 h1, h2, h3, h4, h5, h6{
   font-style: normal;
+  line-height: 130%;
+  font-weight: 500;
+  @media(min-width:992px){
+    font-weight: 700;
+  }
 }
 h1{
-  font-size: clamp(50px, cqi(120), 120px);
+  font-size: res(50, 100);
+  font-weight: 700;
+  @media(min-width:992px){
+    font-weight: 900;
+  }
 }
-h2{
-  font-size: clamp(35px, cqi(70), 70px);
+h2{ font-size: res(35, 70) }
+h3{ font-size: res(30, 60) }
+h4{ font-size: res(24, 40) }
+h5{ font-size: res(22, 30); text-transform: uppercase; }
+h6{ font-size: res(20, 24); text-transform: uppercase; }
+
+p{
+  font-size: res(16, 18);
+  margin-bottom: res(10, 15);
 }
-h3{
-  font-size: clamp(30px, cqi(50), 50px);
-}
-h4{
-  font-size: clamp(24px, cqi(40), 40px);
-}
-h5{
-  font-size: clamp(22px, cqi(30), 30px);
-}
-h6{
-  font-size: clamp(20px, cqi(24), 24px);
+
+ul{
+  margin-bottom: res(10, 15);
+  padding-left: res(10, 15);
+  li{
+    font-size: res(16, 18);
+  }
 }
 
 a{
-  font-size: clamp(16px, cqi(18), 18px);
+  text-decoration: underline;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.txt{
+  &-yellow{
+    color: var(--yellow);
+  }
+  &-white{
+    color: var(--white);
+  }
+  &-dark{
+    color: var(--dark);
+  }
 }

@@ -1,57 +1,47 @@
 .banner{
-  background-image: url("../img/banner-img.png");
-  background-size: cover;
-  background-position: center;
-  height: 1080px;
+  background: url("../img/banner-img.png") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  @media(max-width:767px){
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media(min-width:768px){
+    height: 100vh;
+  }
   .container{
     position: relative;
+    padding-top: res(0, 60);
   }
-  &__title{
-    position: absolute;
-    right: 15px;
-    top: 60px;
-    text-align: right;
-    h3{
-      color: var(--white);
-      span{
-        color: var(--white);
-        font-size: 28px;
-        @media(min-width:992px){
-          font-size: 40px;
-        }
-      }
-    }
-    h2{
-      color: var(--white);
-      span{
-        color: var(--yellow);
-      }
-    }
-  }
-  &__text{
-    text-align: center;
-    padding-top: 475px;
-    h1{
-      color: var(--white);
-      padding-bottom: 60px;
-    }
+  h1, h4{
     span{
       color: var(--yellow);
     }
   }
-  button{
-    padding: 20px 45px;
-    background: var(--yellow, #FDC236);
-    color: var(--dark);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 130%; /* 23.4px */
-    text-transform: uppercase;
-    border:none;
-    &:hover{
-      transform: scale(1.1);
-      transition: 1.1s;
+  &__title{
+    margin-bottom: 30px;
+    @media(min-width:992px){
+      margin-bottom: 0;
+      position: absolute;
+      right: 30px;
+      text-align: right;
+      top: 0;
+      transform: translateY(-100%);
+    }
+  }
+  h5{
+    line-height: 1;
+    span{
+      font-size: 75%;
+    }
+  }
+  h1{
+    margin-bottom: 30px;
+    @media(min-width:1200px){
+      font-size: 130px;
     }
   }
 }

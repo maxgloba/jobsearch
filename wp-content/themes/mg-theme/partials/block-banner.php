@@ -1,12 +1,10 @@
 <section class="banner">
   <div class="container">
+    <h1><span>Job</span>Search UG</h1>
     <div class="banner__title">
-      <h3>CONSTRUCTION <br> <span>YOUR</span></h3>
-      <h2>DREAM <span>HOUSE</span></h2>
+      <h5>CONSTRUCTION <br> <span>YOUR</span></h5>
+      <h4>DREAM <span>HOUSE</span></h4>
     </div>
-    <div class="banner__text">
-      <h1><span>Job</span>Search UG</h1>
-      <button>contact us</button>
-    </div>
+    <button class="btn btn-yellow">contact us</button>
   </div>
 </section>

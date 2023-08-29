@@ -1,0 +1,33 @@
+.btn{
+  display: inline-flex;
+  padding: res(10, 20) res(30, 45);
+  background: var(--dark);
+  transition: .3s ease;
+  line-height: 1.3;
+  color: var(--white);
+  border: none;
+  text-align: center;
+  font-size: res(14, 18);
+  font-weight: 500;
+  text-transform: uppercase;
+  @media(min-width:768px){
+    font-weight: 700;
+  }
+  &:disabled{
+    opacity: .5;
+    cursor: default;
+    pointer-events: none;
+  }
+  &:hover{
+    background-color: var(--yellow);
+    color: var(--dark);
+  }
+  &-yellow{
+    background-color: var(--yellow);
+    color: var(--dark);
+    &:hover{
+      background-color: var(--dark);
+      color: var(--white);
+    }
+  }
+}

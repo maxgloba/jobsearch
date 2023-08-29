@@ -1,6 +1,6 @@
 <header class="main-header">
 	<div class="container">
-		<a href="<?php echo home_url(); ?>"><?php the_field('logo', 'option'); ?></a>
+		<a class="main-header__logo" href="<?php echo home_url(); ?>"><?php the_field('logo', 'option'); ?></a>
 		<nav class="main-header__nav">
       <button data-section="about">About us</button>
       <button data-section="services">Our services</button>
