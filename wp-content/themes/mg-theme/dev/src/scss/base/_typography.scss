@@ -26,19 +26,42 @@ h1{
 h2{ font-size: res(35, 70) }
 h3{ font-size: res(30, 60) }
 h4{ font-size: res(24, 40) }
-h5{ font-size: res(22, 30); text-transform: uppercase; }
-h6{ font-size: res(20, 24); text-transform: uppercase; }
+h5{ font-size: res(22, 30) }
+h6{ font-size: res(20, 24) }
+
+h5, h6{ text-transform: uppercase }
 
 p{
   font-size: res(16, 18);
-  margin-bottom: res(10, 15);
+  margin-bottom: res(15, 30);
 }
 
 ul{
-  margin-bottom: res(10, 15);
-  padding-left: res(10, 15);
+  margin-bottom: res(15, 30);
   li{
+    position: relative;
     font-size: res(16, 18);
+    padding-left: res(15, 30);
+    position: relative;
+    &:before, &:after{
+      content:"";
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 15px;
+      height: 3px;
+      background: var(--yellow);
+    }
+    &:before{
+      top: 10px;
+      z-index: 2;
+    }
+    &:after{
+      background-color: var(--dark);
+      top: 11px;
+      left: 1px;
+      z-index: 1;
+    }
   }
 }
 
@@ -46,6 +69,20 @@ a{
   text-decoration: underline;
   &:hover{
     text-decoration: none;
+  }
+}
+
+.section-title{
+  margin-bottom: res(30, 60);
+  color: var(--yellow);
+  span{
+    color: var(--dark);
+    border-bottom: 8px solid var(--yellow);
+  }
+  &-white{
+    span{
+      color: var(--white);
+    }
   }
 }
 
