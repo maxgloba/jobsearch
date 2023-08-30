@@ -1,42 +1,47 @@
 <section class="services">
   <div class="container">
-    <h2><span>Our</span> Services</h2>
-    <div class="my-slider">
-      <div class="item">
-        <img src="<?php echo IMG; ?>/service-img1.png" alt="">
-        <div class="item__info">
-          <h5>Donec justo sapien</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu faucibus magna. Fusce et odio nec tellus egestas volutpat.</p>
-          <button class="btn btn-yellow">read more</button>
+    <h2 class="title title-white"><span>Our</span> Services</h2>
+    <div class="services__slider">
+      <div>
+        <div class="services__item">
+          <div class="services__info">
+            <img src="<?php echo IMG; ?>/service-img1.png" alt="">
+            <h6>Donec justo sapien</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu faucibus magna. Fusce et odio nec tellus egestas volutpat.</p>
+            <button class="btn btn-yellow">read more</button>
+          </div>
         </div>
       </div>
-      <div class="item">
-        <img src="<?php echo IMG; ?>/service-img2.png" alt="">
-        <div class="item__info">
-          <h5>Donec justo sapien</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu faucibus magna. Fusce et odio nec tellus egestas volutpat.</p>
-          <button class="btn btn-yellow">read more</button>
+      <div>
+        <div class="services__item">
+          <div class="services__info">
+            <img src="<?php echo IMG; ?>/service-img2.png" alt="">
+            <h6>Donec justo sapien</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu faucibus magna. Fusce et odio nec tellus egestas volutpat.</p>
+            <button class="btn btn-yellow">read more</button>
+          </div>
         </div>
       </div>
-      <div class="item">
-        <img src="<?php echo IMG; ?>/service-img3.png" alt="">
-        <div class="item__info">
-          <h5>Donec justo sapien</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu faucibus magna. Fusce et odio nec tellus egestas volutpat.</p>
-          <button class="btn btn-yellow">read more</button>
+      <div>
+        <div class="services__item">
+          <div class="services__info">
+            <img src="<?php echo IMG; ?>/service-img3.png" alt="">
+            <h6>Donec justo sapien</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu faucibus magna. Fusce et odio nec tellus egestas volutpat.</p>
+            <button class="btn btn-yellow">read more</button>
+          </div>
         </div>
       </div>
-      <div class="item">
-        <img src="<?php echo IMG; ?>/service-img2.png" alt="">
-        <div class="item__info">
-          <h5>Donec justo sapien</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu faucibus magna. Fusce et odio nec tellus egestas volutpat.</p>
-          <button class="btn btn-yellow">read more</button>
+      <div>
+        <div class="services__item">
+          <div class="services__info">
+            <img src="<?php echo IMG; ?>/service-img2.png" alt="">
+            <h6>Donec justo sapien</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu faucibus magna. Fusce et odio nec tellus egestas volutpat.</p>
+            <button class="btn btn-yellow">read more</button>
+          </div>
         </div>
       </div>
-      <div class="item">5</div>
-      <div class="item">6</div>
-      <div class="item">7</div>
     </div>
     <form class="form" action="#">
       <h4>Call me back</h4>

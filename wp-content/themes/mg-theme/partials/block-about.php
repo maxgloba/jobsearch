@@ -1,6 +1,6 @@
 <section class="about">
   <div class="container">
-    <h2 class="section-title"><span>ABOUT</span> OUR COMPANY</h2>
+    <h2 class="title"><span>ABOUT</span> OUR COMPANY</h2>
     <div class="about__row">
       <img src="<?php echo IMG; ?>/about-img.png" alt="">
       <div class="about__info">
