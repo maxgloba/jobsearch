@@ -45,7 +45,7 @@
     </div>
     <form class="form" action="#">
       <h4>Call me back</h4>
-      <input id="tel" type="tel" value="phone"/>
+      <input id="tel" type="tel" placeholder="phone" maxlength="12" />
       <button class="btn">send</button>
     </form>
   </div>

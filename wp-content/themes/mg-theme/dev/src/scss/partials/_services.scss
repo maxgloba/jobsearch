@@ -1,7 +1,5 @@
 .services{
   background: var(--dark);
-  padding-bottom: res(50, 100);
-  padding-top: res(50, 100);
   .tns{
     &-ovh {
       overflow: visible;
@@ -78,12 +76,14 @@
     margin: 0 auto;
     background: var(--yellow);
     padding: 30px;
+
     input{
-      width: 338px;
-      height: 63px;
+      max-width: 338px;
+      width: 100%;
       margin: 0 15px;
+      padding: res(0, 20) res(0, 45);
       padding-left: 15px;
-      font-size: 20px;
+      font-size: res(14, 18);
       font-weight: 400;
       line-height: 130%;
       text-transform: uppercase;

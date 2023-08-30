@@ -1,4 +1,36 @@
 <section class="experts">
   <div class="container">
+    <h2 class="title"><span>OUR</span> EXPERTS</h2>
+    <p>Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor<br> sit amet, consectetuer adipis elit, aliquam eget nibh etlibura.</p>
+    <div class="experts__row">
+      <div class="experts__item">
+        <img src="<?php echo IMG; ?>/experts-img1.png" alt="">
+        <div class="experts__info">
+          <h6>steve jobs</h6>
+          <span>Supervisor</span>
+        </div>
+      </div>
+      <div class="experts__item">
+        <img src="<?php echo IMG; ?>/experts-img2.png" alt="">
+        <div class="experts__info">
+          <h6>steve jobs</h6>
+          <span>Supervisor</span>
+        </div>
+      </div>
+      <div class="experts__item">
+        <img src="<?php echo IMG; ?>/experts-img3.png" alt="">
+        <div class="experts__info">
+          <h6>steve jobs</h6>
+          <span>Supervisor</span>
+        </div>
+      </div>
+      <div class="experts__item">
+        <img src="<?php echo IMG; ?>/experts-img4.png" alt="">
+        <div class="experts__info">
+          <h6>steve jobs</h6>
+          <span>Supervisor</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
