@@ -40,13 +40,13 @@ function front_scripts() {
 		wp_enqueue_style( 'styles', get_template_directory_uri().'/css/styles-page.css');
 		wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts-page.js', false, false, 'in_footer');
 	}
+*/
 
 // 404 page
 	if( is_404() ){
 		wp_enqueue_style( 'styles', get_template_directory_uri().'/css/styles-404.css');
 		wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts-404.js', false, false, 'in_footer');
 	}
-*/
 }
 add_action( 'wp_enqueue_scripts', 'front_scripts' );
 

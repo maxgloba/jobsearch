@@ -47,7 +47,7 @@
       <h4>Call me back</h4>
       <form class="form" action="/">
         <input id="tel" type="tel" placeholder="phone" maxlength="14" maxlength="14" required />
-        <input type="submit">
+        <input type="submit" value="send">
       </form>
     </div>
   </div>

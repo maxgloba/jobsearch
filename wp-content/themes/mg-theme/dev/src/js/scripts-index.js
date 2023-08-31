@@ -1,5 +1,8 @@
 //= partials/header.js
+//= partials/footer.js
+//= partials/banner.js
 //= partials/tiny-slider.js
+//= partials/burger-menu.js
 
   tns({
     container: '.services__slider',
