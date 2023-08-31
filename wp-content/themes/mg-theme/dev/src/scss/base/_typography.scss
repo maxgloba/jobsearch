@@ -75,6 +75,7 @@ a{
 .title{
   margin-bottom: res(30, 60);
   color: var(--yellow);
+  text-transform: uppercase;
   span{
     color: var(--dark);
     border-bottom: 8px solid var(--yellow);
