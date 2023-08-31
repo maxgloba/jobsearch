@@ -43,10 +43,12 @@
         </div>
       </div>
     </div>
-    <form class="form" action="#">
+    <div class="services__callback">
       <h4>Call me back</h4>
-      <input id="tel" type="tel" placeholder="phone" maxlength="12" />
-      <button class="btn">send</button>
-    </form>
+      <form class="form" action="/">
+        <input id="tel" type="tel" placeholder="phone" maxlength="14" maxlength="14" required />
+        <input type="submit">
+      </form>
+    </div>
   </div>
 </section>

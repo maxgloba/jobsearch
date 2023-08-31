@@ -4,3 +4,4 @@ cache/*
 *.zip
 *.psd
 *.rar
+gulpfile.js
