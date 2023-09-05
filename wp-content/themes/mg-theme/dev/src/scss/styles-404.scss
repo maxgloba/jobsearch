@@ -4,15 +4,39 @@
 @import 'partials/footer';
 
 .page404{
-  margin-bottom: 30px;
-  padding-top: clamp(100px, cqi(260), 260px);
-  padding-bottom: clamp(20px, cqi(210), 210px);
   text-align: center;
-  background: url('../img/404.png') no-repeat center bottom / auto 100%;
-  .container{
-    width: 900px;
+  background: url('../img/background-404.png') no-repeat center/cover;
+  @media(min-width:768px){
+    min-height: 100vh;
   }
-  .btn{
-    margin-top: 20px;
+  .container{
+    width: 1400px;
+    position: relative;
+    padding-top: res(0, 450);
+  }
+  div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .logo{
+      display: block;
+      margin-bottom: 60px;
+      svg{
+        display: block;
+        width: res(400, 600);
+        height: auto;
+      }
+    }
+    h2{
+      font-size: res(50, 100);
+      font-weight: 900;
+      line-height: 1.3;
+    }
+    .btn{
+      margin-top: 120px;
+    }
+  }
+  a{
+    text-decoration: none;
   }
 }

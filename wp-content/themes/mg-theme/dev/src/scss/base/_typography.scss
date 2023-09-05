@@ -66,11 +66,8 @@ ul{
 }
 
 a{
+  font-size: res(16, 18);
   text-decoration: underline;
-  color: var(--dark);
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 130%;
   &:hover{
     text-decoration: none;
   }

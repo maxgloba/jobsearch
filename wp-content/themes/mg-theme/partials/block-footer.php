@@ -1,7 +1,7 @@
 <footer id="main-footer" class="main-footer">
   <div class="container">
     <div class="main-footer__logo">
-      <a href="<?php echo home_url(); ?>"><?php the_field('logo-footer', 'option'); ?></a>
+      <a href="<?php echo home_url(); ?>"><?php the_field('logo', 'option'); ?></a>
       <p><?php the_field('slogan', 'option'); ?></p>
     </div>
     <nav class="main-footer__nav">

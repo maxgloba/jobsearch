@@ -1,6 +1,6 @@
 <header class="main-header">
   <div class="container">
-	<a class="main-header__logo" href="<?php echo home_url(); ?>"><?php the_field('logo-header', 'option'); ?></a>
+	<a class="main-header__logo" href="<?php echo home_url(); ?>"><?php the_field('logo', 'option'); ?></a>
   <button class="burger">
     <span></span>
     <span></span>
