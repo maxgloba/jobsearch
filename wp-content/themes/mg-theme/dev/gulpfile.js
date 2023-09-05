@@ -60,7 +60,7 @@ gulp.task('images', function () {
 
 gulp.task('browser-sync', function() {
   browserSync.init({
-    proxy: "jobsearch.loc",
+    proxy: "localhost:8888/jobsearch",
     watch: true,
     open: false,
     notify: false,

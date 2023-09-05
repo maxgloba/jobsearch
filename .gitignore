@@ -60,3 +60,4 @@ node_modules/
 
 gulpfile.js
 */gulpfile.js
+wp-content/themes/mg-theme/dev/gulpfile.js
