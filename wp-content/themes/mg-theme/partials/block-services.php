@@ -1,6 +1,6 @@
 <section class="services">
   <div class="container">
-    <h2 class="title title-white"><span>Our</span> Services</h2>
+    <h2 class="title title-white animation"><span>Our</span> Services</h2>
     <div class="services__slider">
       <div>
         <div class="services__item">

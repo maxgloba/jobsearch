@@ -1,6 +1,6 @@
 <section class="projects">
   <div class="container">
-    <h2 class="title"><span>LATEST</span> PROJECT</h2>
+    <h2 class="title animation"><span>LATEST</span> PROJECT</h2>
   </div>
   <div class="projects__row">
     <div class="projects__item">

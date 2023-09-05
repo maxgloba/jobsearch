@@ -55,6 +55,56 @@ var tns=function(){Object.keys||(Object.keys=function(t){var e=[];for(var n in t
   })
 
 })();
+(function(){
+
+  const animItems = document.querySelectorAll('.animation')
+
+  if(animItems.length > 0) {
+    window.addEventListener('scroll', animOnScroll)
+    function animOnScroll(params) {
+      for(let index = 0; index < animItems.length; index++) {
+        const animItem = animItems[index]
+        const animItemHeight = animItem.offsetHeight
+        const animItemOffset = offset(animItem).top
+        const animStart = 6
+
+        let animItemPoint = window.innerHeight - animItemHeight / animStart
+        if(animItemHeight > window.innerHeight) {
+          animItemPoint = window.innerHeight - window.innerHeight / animStart
+        }
+
+        if((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+          animItem.classList.add('animation-active')
+        } else {
+          animItem.classList.remove('animation-active')
+        }
+      }
+    }
+  }
+
+  function offset(el) {
+    const rect = el.getBoundingClientRect(),
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+  }
+
+  setTimeout(() => {
+    animOnScroll();
+  }, 300)
+  
+})();
+(function(){
+
+const clickPopup = document.querySelectorAll('.projects projects__item')
+clickPopup.forEach(el => {
+  el.addEventListener('click', e => {
+    e.preventDefault()
+    document.querySelector('.popup').classList.add('popup-active')
+  })
+})
+
+})();
 
   tns({
     container: '.services__slider',

@@ -1,7 +1,7 @@
 <section class="experts">
   <div class="container">
-    <h2 class="title"><span>OUR</span> EXPERTS</h2>
-    <p>Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor<br> sit amet, consectetuer adipis elit, aliquam eget nibh etlibura.</p>
+    <h2 class="title animation"><span>OUR</span> EXPERTS</h2>
+    <p class="animation">Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor<br> sit amet, consectetuer adipis elit, aliquam eget nibh etlibura.</p>
     <div class="experts__row">
       <div class="experts__item">
         <div class="experts__info">
