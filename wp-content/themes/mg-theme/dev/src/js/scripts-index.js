@@ -4,7 +4,7 @@
 //= partials/tiny-slider.js
 //= partials/burger-menu.js
 //= partials/scroll.js
-//= partials/popup.js
+//= partials/modal.js
 
   tns({
     container: '.services__slider',

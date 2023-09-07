@@ -8,7 +8,7 @@
             <img src="<?php echo IMG; ?>/service-img1.png" alt="">
             <h6>Donec justo sapien</h6>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu faucibus magna. Fusce et odio nec tellus egestas volutpat.</p>
-            <button class="btn btn-yellow">read more</button>
+            <button class="btn btn-yellow openmodal" data-modal="[modal_1]">read more</button>
           </div>
         </div>
       </div>
@@ -18,7 +18,7 @@
             <img src="<?php echo IMG; ?>/service-img2.png" alt="">
             <h6>Donec justo sapien</h6>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu faucibus magna. Fusce et odio nec tellus egestas volutpat.</p>
-            <button class="btn btn-yellow">read more</button>
+            <button class="btn btn-yellow openmodal" data-modal="[modal_2]">read more</button>
           </div>
         </div>
       </div>
@@ -28,7 +28,7 @@
             <img src="<?php echo IMG; ?>/service-img3.png" alt="">
             <h6>Donec justo sapien</h6>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu faucibus magna. Fusce et odio nec tellus egestas volutpat.</p>
-            <button class="btn btn-yellow">read more</button>
+            <button class="btn btn-yellow openmodal" data-modal="[modal_3]">read more</button>
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@
             <img src="<?php echo IMG; ?>/service-img2.png" alt="">
             <h6>Donec justo sapien</h6>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu faucibus magna. Fusce et odio nec tellus egestas volutpat.</p>
-            <button class="btn btn-yellow">read more</button>
+            <button class="btn btn-yellow openmodal" data-modal="[modal_4]">read more</button>
           </div>
         </div>
       </div>

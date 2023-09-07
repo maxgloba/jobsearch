@@ -96,12 +96,24 @@ var tns=function(){Object.keys||(Object.keys=function(t){var e=[];for(var n in t
 })();
 (function(){
 
-const clickPopup = document.querySelectorAll('.projects projects__item')
-clickPopup.forEach(el => {
+const openModal = document.querySelectorAll('.openmodal')
+openModal.forEach(el => {
   el.addEventListener('click', e => {
     e.preventDefault()
-    document.querySelector('.popup').classList.add('popup-active')
+    document.querySelector('.modal').classList.add('modal-active')
+    document.documentElement.style.overflow = 'hidden'
+    document.documentElement.style.height = '100vh';
+    document.documentElement.style.width = '100vw';
   })
+})
+
+const closeModal = document.querySelector('.modal__close')
+closeModal.addEventListener('click', e => {
+  document.querySelector('.modal').classList.remove('modal-active')
+  e.preventDefault()
+  document.documentElement.style.overflow = 'auto'
+  document.documentElement.style.height = 'auto';
+  document.documentElement.style.width = 'auto';
 })
 
 })();
