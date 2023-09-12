@@ -2,7 +2,6 @@
 //= partials/footer.js
 //= partials/banner.js
 //= partials/tiny-slider.js
-//= partials/burger-menu.js
 //= partials/scroll.js
 //= partials/modal.js
 

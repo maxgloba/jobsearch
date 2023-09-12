@@ -9,6 +9,7 @@
   .container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   &__logo{
     display: block;
@@ -19,42 +20,40 @@
       height: auto;
     }
   }
-  .burger{
+  &__burger{
     background: none;
     border: none;
-    width: 50px;
+    padding: 0;
+    width: 40px;
     height: 40px;
-    border-radius: 4px;
-    position: absolute;
-    right: 10%;
-    top: 50%;
-    z-index: 20;
-    transform: translate(0, -50%);
+    position: relative;
+    overflow: hidden;
     @media(min-width:768px){
       display: none;
     }
-    span {
+    svg{
       display: block;
-      margin: 6px 0;
-      background: var(--yellow);
-      width: 100%;
-      height: 4px;
+      position: absolute;
+      left: 0; top: 0;
+      transition: .5s ease;
       pointer-events: none;
     }
-    &-active{
-      &::after{
-        content:"+";
-        display: block;
-        position: absolute;
-        left: 20px;
-        top: 15px;
-        color:var(--yellow);
-        font-weight: 300;
-        transform: scale(5) rotate(45deg);
-        line-height: 1;
+    &-open{
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+    &-close{
+      transform: translate(100%, 0);
+      opacity: 0;
+    }
+    &.active{
+      .main-header__burger-open{
+        transform: translate(-100%, 0);
+        opacity: 0;
       }
-      span{
-        display: none;
+      .main-header__burger-close{
+        transform: translate(0, 0);
+        opacity: 1;
       }
     }
   }
@@ -64,15 +63,14 @@
       position: fixed;
       background: var(--yellow);
       transition: .4s ease-in-out;
-      top: 60px;
+      top: 68px;
       left: 0; width: 100%;
       overflow: hidden;
-      max-height: 0vh;
+      max-height: 0;
       opacity: 0;
-      transition: max-height 1s ease, opacity .5s ease;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      padding-left: 20px;
+      transition: .5s ease;
+      padding: 0;
+      flex-direction: column;
     }
     button{
       padding: 0px res(10, 15);
@@ -86,16 +84,23 @@
       &:hover, &.active{
         background: var(--yellow);
       }
+      @media(max-width:767px){
+        background: var(--yellow);
+        font-size: 20px;
+        line-height: 1.5;
+        transition: .75s ease;
+      }
     }
-  }
-  &__nav-active{
-    flex-direction: column;
-    max-height: 25vh;
-    opacity: 1;
-    button{
-      background: var(--yellow);
-      font-size: 20px;
-      line-height: 1.5;
+    &.active{
+      max-height: 100vh;
+      opacity: 1;
+      padding-top: 45px;
+      padding-bottom: 45px;
+      button{
+        &:not(:first-child){
+          margin-top: 30px;
+        }
+      }
     }
   }
 }
