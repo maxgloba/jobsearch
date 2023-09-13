@@ -1,11 +1,8 @@
 (function(){
 
-  const headerNav = document.querySelectorAll('.main-footer button')
-  headerNav.forEach(el => {
-    el.addEventListener('click', e => {
-      e.preventDefault()
-      document.querySelector(`.${e.target.dataset.section}`).scrollIntoView({block: "start", behavior: "smooth"});
-    })
+  const footerLogo = document.querySelectorAll('.main-footer__logo [fill="#242424"]')
+  footerLogo.forEach(el => {
+    el.setAttribute('fill', 'var(--white)')
   })
 
 })();

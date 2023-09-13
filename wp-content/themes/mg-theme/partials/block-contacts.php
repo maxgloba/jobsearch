@@ -1,6 +1,6 @@
 <section class="contacts">
   <div class="container">
-    <h2 class="title animation"><span>CONTACT</span> US</h2>
+    <h2 class="title" data-anim="fadeInLeft"><span>CONTACT</span> US</h2>
     <div class="contacts__row">
       <div class="contacts__info">
         <div>
