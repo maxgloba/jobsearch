@@ -14,7 +14,7 @@
           <li>Lorem ipsum dolor sit amet consectetur</li>
           <li>Ut sit amet nisl sed ante vulputate</li>
         </ul>
-        <button class="btn" data-anim="fadeInUp" data-anim-delay=".4">contact us</button>
+        <button class="btn scrollTo" data-scroll-to="contacts" data-anim="fadeInUp" data-anim-delay=".4">contact us</button>
       </div>
     </div>
   </div>

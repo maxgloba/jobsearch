@@ -28,11 +28,11 @@
 })();
 (function(){
 
-  const headerNav = document.querySelectorAll('.banner button')
-  headerNav.forEach(el => {
-    el.addEventListener('click', e => {
+  const scrollToButtons = document.querySelectorAll('.scrollTo')
+  scrollToButtons.forEach(scrollTo => {
+    scrollTo.addEventListener('click', e => {
       e.preventDefault()
-      document.querySelector('.contacts').scrollIntoView({block: "start", behavior: "smooth"});
+      document.querySelector(`.${scrollTo.dataset.scrollTo}`).scrollIntoView({block: "start", behavior: "smooth"})
     })
   })
 
@@ -70,27 +70,30 @@ var tns=function(){Object.keys||(Object.keys=function(t){var e=[];for(var n in t
 
 })();
 (function(){
+  setTimeout(()=>{
+    const openModal = document.querySelectorAll('[data-modal]')
+    openModal.forEach(el => {
+      el.addEventListener('click', e => {
+        e.preventDefault()
+        document.getElementById(el.dataset.modal).classList.add('modal-active')
+        document.documentElement.style.overflow = 'hidden'
+        document.documentElement.style.height = '100vh';
+        document.documentElement.style.width = '100vw';
+      })
+    })
 
-const openModal = document.querySelectorAll('[data-modal]')
-openModal.forEach(el => {
-  el.addEventListener('click', e => {
-    e.preventDefault()
-    document.querySelector('.modal').classList.toggle('modal-active')
-    document.documentElement.style.overflow = 'hidden'
-    document.documentElement.style.height = '100vh';
-    document.documentElement.style.width = '100vw';
-  })
-})
-
-const closeModal = document.querySelector('.modal__close')
-closeModal.addEventListener('click', e => {
-  document.querySelector('.modal').classList.remove('modal-active')
-  e.preventDefault()
-  document.documentElement.style.overflow = 'auto'
-  document.documentElement.style.height = 'auto';
-  document.documentElement.style.width = 'auto';
-})
-
+    const closeModal = document.querySelectorAll('.modal__close')
+    closeModal.forEach(el => {
+      el.addEventListener('click', e => {
+        e.preventDefault()
+        console.log(111);
+        document.querySelector('.modal-active').classList.remove('modal-active')
+        document.documentElement.style.overflow = 'auto'
+        document.documentElement.style.height = 'auto';
+        document.documentElement.style.width = 'auto';
+      })
+    })
+  }, 50);
 })();
 
   tns({

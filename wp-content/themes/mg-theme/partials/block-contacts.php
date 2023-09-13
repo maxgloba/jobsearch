@@ -1,6 +1,6 @@
 <section class="contacts">
   <div class="container">
-    <h2 class="title" data-anim="fadeInLeft"><span>CONTACT</span> US</h2>
+    <h2 class="title" data-anim="fadeInRight"><span>CONTACT</span> US</h2>
     <div class="contacts__row">
       <div class="contacts__info" data-anim="fadeInLeft" data-anim-delay=".2">
         <div>
@@ -44,7 +44,7 @@
           <a target="_blank" href="http://instagram.com/job.search.ug">instagram/job.search.ug</a>
         </div>
       </div>
-      <form class="form" action="/" data-anim="fadeInRight" data-anim-delay=".2">
+      <form class="form" action="/" data-anim="fadeInRight" data-anim-delay=".4">
         <input id="name" type="text" minlength="2" placeholder="name" required>
         <input id="email" type="email" placeholder="e-mail" required>
         <input id="tel" type="tel" placeholder="phone">

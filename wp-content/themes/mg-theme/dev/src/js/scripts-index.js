@@ -1,6 +1,6 @@
 //= partials/header.js
 //= partials/footer.js
-//= partials/banner.js
+//= partials/scrollTo.js
 //= partials/tiny-slider.js
 //= partials/animate.js
 //= partials/modal.js

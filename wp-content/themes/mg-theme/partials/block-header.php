@@ -1,4 +1,4 @@
-<header class="main-header">
+<header class="main-header"  data-anim="slideInDown" data-anim-delay=".4">
   <div class="container">
     <a class="main-header__logo" href="<?php echo home_url(); ?>"><?php the_field('logo', 'option'); ?></a>
     <button class="main-header__burger">
