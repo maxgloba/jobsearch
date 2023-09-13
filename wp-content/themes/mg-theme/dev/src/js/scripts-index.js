@@ -2,7 +2,7 @@
 //= partials/footer.js
 //= partials/banner.js
 //= partials/tiny-slider.js
-//= partials/scroll.js
+//= partials/animate.js
 //= partials/modal.js
 
   tns({
