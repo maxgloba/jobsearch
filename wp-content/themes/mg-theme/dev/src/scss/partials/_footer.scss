@@ -25,8 +25,12 @@
   }
   nav{
     display: flex;
+    padding-bottom: 0;
+    @media(min-width:992px){
+      padding-bottom: 40px;
+    }
     button{
-      padding-bottom: 30px;
+      padding-bottom: var(15, 30);
       background: var(--dark);
       color: var(--white);
       border: none;
@@ -45,8 +49,8 @@
   }
   span{
     position: absolute;
-    right: 20px;
-    bottom: 25px;
+    right: 10px;
+    bottom: 0px;
     color: var(--white);
     font-size: 16px;
     font-weight: 500;

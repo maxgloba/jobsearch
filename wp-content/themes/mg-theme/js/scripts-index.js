@@ -5,7 +5,16 @@
     e.preventDefault()
     e.target.classList.toggle('active');
     document.querySelector('.main-header__nav').classList.toggle('active');
-    console.log(111);
+  })
+
+  const headerNav = document.querySelectorAll('.main-header__nav button')
+  headerNav.forEach(el => {
+    el.addEventListener('click', e => {
+      e.preventDefault()
+      document.querySelector(`.${e.target.dataset.section}`).scrollIntoView({block: "start", behavior: "smooth"});
+      document.querySelector('.main-header__nav').classList.toggle('active');
+      document.querySelector('.main-header__burger').classList.toggle('active');
+    })
   })
 
 })();
@@ -62,11 +71,11 @@ var tns=function(){Object.keys||(Object.keys=function(t){var e=[];for(var n in t
 })();
 (function(){
 
-const openModal = document.querySelectorAll('.openmodal')
+const openModal = document.querySelectorAll('[data-modal]')
 openModal.forEach(el => {
   el.addEventListener('click', e => {
     e.preventDefault()
-    document.querySelector('.modal').classList.add('modal-active')
+    document.querySelector('.modal').classList.toggle('modal-active')
     document.documentElement.style.overflow = 'hidden'
     document.documentElement.style.height = '100vh';
     document.documentElement.style.width = '100vw';

@@ -32,6 +32,20 @@
       transition: .5s ease-in-out;
       background: rgba(var(--dark-rgb), .7);
       color: var(--yellow);
+      a{
+        font-style: normal;
+        line-height: 130%;
+        font-weight: 500;
+        font-size: res(24, 40);
+        text-decoration: none;
+        cursor: pointer;
+        @media(min-width:992px){
+          font-weight: 700;
+        }
+        &:hover{
+          color: var(--white);
+        }
+      }
       ul{
         color: var(--white);
       }

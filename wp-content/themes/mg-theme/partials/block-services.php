@@ -1,8 +1,8 @@
 <section class="services">
   <div class="container">
-    <h2 class="title title-white animation"><span>Our</span> Services</h2>
+    <h2 class="title title-white" data-anim="fadeInLeft"><span>Our</span> Services</h2>
     <div class="services__slider">
-      <div>
+      <div data-anim="fadeInUp" data-anim-delay=".1">
         <div class="services__item">
           <div class="services__info">
             <img src="<?php echo IMG; ?>/service-img1.png" alt="">
@@ -12,7 +12,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div data-anim="fadeInUp" data-anim-delay=".1">
         <div class="services__item">
           <div class="services__info">
             <img src="<?php echo IMG; ?>/service-img2.png" alt="">
@@ -22,7 +22,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div data-anim="fadeInUp" data-anim-delay=".1">
         <div class="services__item">
           <div class="services__info">
             <img src="<?php echo IMG; ?>/service-img3.png" alt="">
@@ -43,7 +43,7 @@
         </div>
       </div>
     </div>
-    <div class="services__callback">
+    <div class="services__callback" data-anim="fadeInUp" data-anim-delay=".2">
       <h4>Call me back</h4>
       <form class="form" action="/">
         <input id="tel" type="tel" placeholder="phone" maxlength="14" maxlength="14" required />
