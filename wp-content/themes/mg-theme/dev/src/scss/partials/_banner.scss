@@ -19,9 +19,15 @@
       color: var(--yellow);
     }
   }
+  h4{
+    @media(min-width:992px){
+      font-size: 70px;
+    }
+  }
   &__title{
     margin-bottom: 30px;
     @media(min-width:992px){
+      padding-bottom: 144px;
       margin-bottom: 0;
       position: absolute;
       right: 30px;
@@ -32,8 +38,14 @@
   }
   h5{
     line-height: 1;
+    @media(min-width:992px){
+      font-size: 50px;
+    }
     span{
       font-size: 75%;
+      @media(min-width:992px){
+        font-size: 40px;
+      }
     }
   }
   h1{

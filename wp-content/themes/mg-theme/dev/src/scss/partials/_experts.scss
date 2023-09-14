@@ -1,4 +1,7 @@
 .experts{
+  p{
+    margin-bottom: 60px;
+  }
   &__row{
     display: grid;
     grid-template-columns: repeat(2, 1fr);

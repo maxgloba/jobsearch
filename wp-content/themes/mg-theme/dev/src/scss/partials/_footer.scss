@@ -25,9 +25,9 @@
   }
   nav{
     display: flex;
-    padding-bottom: 0;
+    padding-bottom: 40px;
     @media(min-width:992px){
-      padding-bottom: 40px;
+      padding-bottom: 0;
     }
     button{
       padding-bottom: var(15, 30);
@@ -49,14 +49,14 @@
   }
   span{
     position: absolute;
-    right: 10px;
+    right: 20px;
     bottom: 0px;
     color: var(--white);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.6;
     @media(min-width:992px){
-      bottom: 40px;
+      bottom: 30px;
     }
   }
 }

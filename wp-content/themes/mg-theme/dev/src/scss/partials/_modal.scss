@@ -10,10 +10,21 @@
   visibility: hidden;
   transition: 1s ease;
   padding: 0;
+  &__img{
+    width: 100%;
+    margin-bottom: 35px;
+    @media(min-width:768px){
+      width: 75%;
+    }
+  }
   &__content{
     color: var(--white);
     position: relative;
     width: 100%;
+    h3,h4{
+      color: var(--yellow);
+      margin-bottom: 30px;
+    }
   }
   &__close{
     background: none;
@@ -48,5 +59,22 @@
     .modal__info{
       transform: translateX(0);
     }
+  }
+  &__flex{
+    display: flex;
+    h3{
+      color: var(--yellow);
+      text-transform: capitalize;
+    }
+    h5{
+      text-transform: capitalize;
+      margin-bottom: 30px;
+    }
+  }
+}
+.experts__text{
+  padding-left: 0;
+  @media(min-width:992px){
+    padding-left: 60px;
   }
 }

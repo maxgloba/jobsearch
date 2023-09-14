@@ -15,7 +15,6 @@
     closeModal.forEach(el => {
       el.addEventListener('click', e => {
         e.preventDefault()
-        console.log(111);
         document.querySelector('.modal-active').classList.remove('modal-active')
         document.documentElement.style.overflow = 'auto'
         document.documentElement.style.height = 'auto';
