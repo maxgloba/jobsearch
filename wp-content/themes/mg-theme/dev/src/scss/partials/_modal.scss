@@ -62,6 +62,7 @@
     transition: .5s ease;
     transform: translateX(100%);
     margin-left: 25vw;
+    overflow-y:auto;
     @media(min-width:576px){
       padding: 60px;
     }

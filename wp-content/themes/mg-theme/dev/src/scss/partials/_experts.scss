@@ -21,6 +21,12 @@
       top: 0;
       left: 0;
     }
+    &:nth-child(-n+2){
+      margin-bottom: 30px;
+      @media(min-width:576px){
+        margin-bottom: 0;
+      }
+    }
     &:before{
       background: var(--dark);
       transition: .5s ease-in-out;
@@ -39,7 +45,7 @@
     text-align: center;
     position: relative;
     z-index: 2;
-    padding: 0 0 30px;
+    padding-bottom: res(15, 30);
     img{
       display: block;
       width: 100%;
