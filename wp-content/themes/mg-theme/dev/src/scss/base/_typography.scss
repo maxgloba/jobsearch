@@ -22,6 +22,9 @@ h1{
   @media(min-width:992px){
     font-weight: 900;
   }
+  @media(min-width:1200px){
+    font-size: 130px;
+  }
 }
 h2{ font-size: res(35, 70) }
 h3{ font-size: res(30, 60) }

@@ -29,9 +29,9 @@
   }
   nav{
     display: flex;
-    padding-bottom: 40px;
+    padding-bottom: 120px;
     @media(min-width:992px){
-      padding-bottom: 0;
+      padding-bottom: 80px;
     }
     button{
       padding-bottom: var(15, 30);
@@ -50,9 +50,35 @@
       flex-direction: column;
     }
   }
+  &__links{
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    @media(max-width:991.98px){
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 270px;
+      left: 0;
+      right: 0;
+    }
+    a{
+      color: var(--white);
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500;
+      line-height: 1.3;
+      &:not(:last-child){
+        padding-right: 10px;
+      }
+      &:hover, &.active{
+        color: var(--yellow);
+      }
+    }
+  }
   span{
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     color: var(--white);
     font-size: 16px;
     font-weight: 500;
@@ -61,5 +87,15 @@
       bottom: 30px;
       right: 20px;
     }
+  }
+}
+.modal{
+  li{
+    &:before, &:after {
+      display: none;
+    } 
+  }
+  a{
+    color: var(--white);
   }
 }
