@@ -14,14 +14,9 @@
     position: relative;
     padding-top: res(0, 60);
   }
-  h1, h4{
+  h1, h2{
     span{
       color: var(--yellow);
-    }
-  }
-  h4{
-    @media(min-width:992px){
-      font-size: 70px;
     }
   }
   &__title{
@@ -35,22 +30,13 @@
       transform: translateY(-100%);
     }
   }
-  h5{
+  h3{
     line-height: 1;
-    @media(min-width:992px){
-      font-size: 50px;
-    }
     span{
-      font-size: 75%;
-      @media(min-width:992px){
-        font-size: 40px;
-      }
+      font-size:res(24, 40);
     }
   }
   h1{
     margin-bottom: 30px;
-    @media(min-width:1200px){
-      font-size: 130px;
-    }
   }
 }
