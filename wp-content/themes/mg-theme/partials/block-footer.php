@@ -2,22 +2,22 @@
   <div class="container">
     <div class="main-footer__logo">
       <a href="<?php echo home_url(); ?>"><?php the_field('logo', 'option'); ?></a>
-      <p><?php the_field('slogan', 'option'); ?></p>
+      <?php the_field('slogan', 'option'); ?>
     </div>
-    <nav class="main-footer__nav">
-      <button class="scrollTo" data-scroll-to="about">About us</button>
-      <button class="scrollTo" data-scroll-to="services">Our services</button>
-      <button class="scrollTo" data-scroll-to="projects">our projects</button>
-      <button class="scrollTo" data-scroll-to="testimonials">testimonials</button>
-      <button class="scrollTo" data-scroll-to="experts">experts</button>
-      <button class="scrollTo" data-scroll-to="contacts">contact us</button>
-    </nav>
-    <div class="main-footer__links">
-      <a data-modal="footer_1" href="">Datenschutzerklärung</a>
-      <a data-modal="footer_2" href="">Impressum</a>
-      <a data-modal="footer_3" href="">Haftungsausschluss</a>
+    <div class="main-footer__right">
+      <nav class="main-footer__nav">
+        <button class="scrollTo" data-scroll-to="about">About us</button>
+        <button class="scrollTo" data-scroll-to="services">Our services</button>
+        <button class="scrollTo" data-scroll-to="projects">our projects</button>
+        <button class="scrollTo" data-scroll-to="testimonials">testimonials</button>
+        <button class="scrollTo" data-scroll-to="experts">experts</button>
+        <button class="scrollTo" data-scroll-to="contacts">contact us</button>
+        <button data-modal="footer_1">Datenschutzerklärung</button>
+        <button data-modal="footer_2">Impressum</button>
+        <button data-modal="footer_3">Haftungsausschluss</button>
+      </nav>
+      <small>All rights reserved © LLC JobSearch 2023</small>
     </div>
-    <span>All rights reserved © LLC JobSearch 2023</span>
   </div>
 </footer>
 
