@@ -28,13 +28,9 @@
           <?php endwhile; ?>
         <?php endif; ?> 
       </div>
-      <form class="form" action="/" data-anim="fadeInRight" data-anim-delay=".4">
-        <input id="name" type="text" minlength="2" placeholder="name" required>
-        <input id="email" type="email" placeholder="e-mail" required>
-        <input id="tel" type="tel" placeholder="phone">
-        <textarea name="message" id="message" placeholder="message" cols="30" rows="6"></textarea>
-        <input type="submit" value="send">
-      </form>
+      <div class="form" data-anim="fadeInRight" data-anim-delay=".4">
+        <?php echo do_shortcode( '[contact-form-7 id="0f5241b" title="Contacts Form"]' ); ?>
+      </div>
     </div>
   </div>
 </section>
