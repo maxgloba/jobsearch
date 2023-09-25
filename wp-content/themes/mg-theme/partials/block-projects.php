@@ -1,24 +1,28 @@
-<section class="projects">
-  <div class="container">
-    <h2 class="title" data-anim="fadeInLeft"><?php the_field('projects_title'); ?></h2>
-  </div>
-  <div class="projects__row">
-    <?php if( have_rows('projects_modals') ): $projects_index = 0; ?>
-    <?php while( have_rows('projects_modals') ): the_row(); $projects_index++; ?>
-      <div class="projects__item" data-anim="fadeInUp" data-anim-delay=".2">  
-        <img src="<?php the_sub_field('image'); ?>" alt="">
-        <div>
-          <a data-modal="projects_<?php echo $projects_index; ?>"><?php the_sub_field('name'); ?></a>
-          <?php the_sub_field('outside_text'); ?>
-        </div>
+<?php if( get_field('projects_title') || have_rows('projects_items') ): ?>
+  <section class="projects">
+    <div class="container">
+      <?php if( get_field('projects_title') ): ?>
+        <h2 class="title" data-anim="fadeInLeft"><?php the_field('projects_title'); ?></h2>
+      <?php endif; ?>
+    </div>
+    <?php if( have_rows('projects_items') ): $projects_index = 0; ?>
+      <div class="projects__row">
+        <?php while( have_rows('projects_items') ): the_row(); $projects_index++; ?>
+          <div class="projects__item" data-anim="fadeInUp" data-anim-delay=".2">  
+            <img src="<?php the_sub_field('image'); ?>" alt="">
+            <div>
+              <a data-modal="projects_<?php echo $projects_index; ?>"><?php the_sub_field('name'); ?></a>
+              <?php the_sub_field('outside_text'); ?>
+            </div>
+          </div>
+        <?php endwhile; ?>          
       </div>
-    <?php endwhile; ?>
     <?php endif; ?>
-  </div>
-</section>
+  </section>
+<?php endif; ?>
 
-<?php if( have_rows('projects_modals') ): $projects_index = 0; ?>
-<?php while( have_rows('projects_modals') ): the_row(); $projects_index++; ?>
+<?php if( have_rows('projects_items') ): $projects_index = 0; ?>
+<?php while( have_rows('projects_items') ): the_row(); $projects_index++; ?>
   <section class="modal" id="projects_<?php echo $projects_index; ?>">
     <div class="modal__content">
       <button class="modal__close">

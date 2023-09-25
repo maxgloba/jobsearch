@@ -1,34 +1,37 @@
-<section class="services">
-  <div class="container">
-    <h2 class="title title-white" data-anim="fadeInRight"><?php the_field('services_title'); ?></h2>
-    <div class="services__slider">
-      <?php if( have_rows('services_modals') ): $services_index = 0; ?>
-      <?php while( have_rows('services_modals') ): the_row(); $services_index++; ?>
-      <div data-anim="fadeInUp">
-        <div class="services__item">  
-          <div class="services__info">
-            <img src="<?php the_sub_field('image'); ?>" alt="">
-            <h6><?php the_sub_field('name'); ?></h6>
-            <p><?php the_sub_field('outside_text'); ?></p>
-            <button class="btn btn-yellow" data-modal="services_<?php echo $services_index; ?>">read more</button>
-          </div>
+<?php if( get_field('services_title') || have_rows('services_items') ): ?>
+  <section class="services">
+    <div class="container">
+      <?php if( get_field('services_title') ): ?>
+        <h2 class="title title-white" data-anim="fadeInRight"><?php the_field('services_title'); ?></h2>
+      <?php endif; ?>
+      <?php if( have_rows('services_items') ): $services_index = 0; ?>
+        <div class="services__slider">
+          <?php while( have_rows('services_items') ): the_row(); $services_index++; ?>
+            <div data-anim="fadeInUp">
+              <div class="services__item">  
+                <div class="services__info">
+                  <img src="<?php the_sub_field('image'); ?>" alt="">
+                  <h6><?php the_sub_field('name'); ?></h6>
+                  <p><?php the_sub_field('outside_text'); ?></p>
+                  <button class="btn btn-yellow" data-modal="services_<?php echo $services_index; ?>"><?php the_sub_field('button_text'); ?></button>
+                </div>
+              </div>
+            </div>
+          <?php endwhile; ?>
+        </div>
+      <?php endif; ?>
+      <div class="services__callback" data-anim="fadeInUp">
+        <h4><?php the_field('services_form_text'); ?></h4>
+        <div class="form">
+          <?php echo do_shortcode( '[contact-form-7 id="01dbfa2" title="Callback Form"]' ); ?>
         </div>
       </div>
-      <?php endwhile; ?>
-      <?php endif; ?>
-    </div>  
-    <div class="services__callback" data-anim="fadeInUp">
-      <h4><?php the_field('services_button'); ?></h4>
-      <form class="form" action="/">
-        <input id="tel" type="tel" placeholder="phone" maxlength="14" maxlength="14" required />
-        <input type="submit" value="send">
-      </form>
     </div>
-  </div>
-</section>
+  </section>
+<?php endif; ?>
 
-<?php if( have_rows('services_modals') ): $services_index = 0; ?>
-<?php while( have_rows('services_modals') ): the_row(); $services_index++; ?>
+<?php if( have_rows('services_items') ): $services_index = 0; ?>
+<?php while( have_rows('services_items') ): the_row(); $services_index++; ?>
   <section class="modal" id="services_<?php echo $services_index; ?>">
     <div class="modal__content">
       <button class="modal__close">
