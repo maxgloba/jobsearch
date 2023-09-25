@@ -5,13 +5,13 @@
   <div class="projects__row">
     <?php if( have_rows('projects_modals') ): $projects_index = 0; ?>
     <?php while( have_rows('projects_modals') ): the_row(); $projects_index++; ?>
-    <div class="projects__item" data-anim="fadeInUp" data-anim-delay=".2">  
-      <img src="<?php the_sub_field('image'); ?>" alt="">
-      <div>
-        <a data-modal="projects_<?php echo $projects_index; ?>"><?php the_sub_field('name'); ?></a>
-        <?php the_sub_field('outside_text'); ?>
+      <div class="projects__item" data-anim="fadeInUp" data-anim-delay=".2">  
+        <img src="<?php the_sub_field('image'); ?>" alt="">
+        <div>
+          <a data-modal="projects_<?php echo $projects_index; ?>"><?php the_sub_field('name'); ?></a>
+          <?php the_sub_field('outside_text'); ?>
+        </div>
       </div>
-    </div>
     <?php endwhile; ?>
     <?php endif; ?>
   </div>

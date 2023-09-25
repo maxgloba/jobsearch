@@ -5,7 +5,7 @@
       <img data-anim="fadeInRight" src="<?php the_field('about_image'); ?>" alt="">
       <div class="about__info">
         <?php the_field('about_text'); ?>
-        <button class="btn scrollTo" data-scroll-to="contacts" data-anim="fadeInUp" data-anim-delay=".4">contact us</button>
+        <button class="btn scrollTo" data-scroll-to="contacts" data-anim="fadeInUp" data-anim-delay=".4"><?php the_field('contacts_menu_anchor'); ?></button>
       </div>
     </div>
   </div>

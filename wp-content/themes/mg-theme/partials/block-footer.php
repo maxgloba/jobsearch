@@ -6,12 +6,12 @@
     </div>
     <div class="main-footer__right">
       <nav class="main-footer__nav">
-        <button class="scrollTo" data-scroll-to="about">About us</button>
-        <button class="scrollTo" data-scroll-to="services">Our services</button>
-        <button class="scrollTo" data-scroll-to="projects">our projects</button>
-        <button class="scrollTo" data-scroll-to="testimonials">testimonials</button>
-        <button class="scrollTo" data-scroll-to="experts">experts</button>
-        <button class="scrollTo" data-scroll-to="contacts">contact us</button>
+        <button class="scrollTo" data-scroll-to="about"><?php the_field('about_menu_anchor'); ?></button>
+        <button class="scrollTo" data-scroll-to="services"><?php the_field('services_menu_anchor'); ?></button>
+        <button class="scrollTo" data-scroll-to="projects"><?php the_field('projects_menu_anchor'); ?></button>
+        <button class="scrollTo" data-scroll-to="testimonials"><?php the_field('testimonials_menu_anchor'); ?></button>
+        <button class="scrollTo" data-scroll-to="experts"><?php the_field('experts_menu_anchor'); ?></button>
+        <button class="scrollTo" data-scroll-to="contacts"><?php the_field('contacts_menu_anchor'); ?></button>
         <?php if( have_rows('footer_modals', 'options') ): $button_index = 0; ?>
           <?php while( have_rows('footer_modals', 'options') ): the_row(); $button_index++; ?>
             <button data-modal="modal_<?php echo $button_index; ?>"><?php the_sub_field('name'); ?></button>
