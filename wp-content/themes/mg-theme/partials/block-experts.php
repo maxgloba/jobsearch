@@ -1,7 +1,7 @@
 <section class="experts">
   <div class="container">
     <h2 class="title" data-anim="fadeInLeft"><?php the_field('experts_title'); ?></h2>
-    <p data-anim="fadeInLeft" data-anim-delay=".2"><?php the_field('experts_paragraph'); ?></p>
+    <p data-anim="fadeInLeft" data-anim-delay=".2"><?php the_field('experts_text'); ?></p>
     <div class="experts__row">
       <?php if( have_rows('experts_modals') ): $experts_index = 0; ?>
       <?php while( have_rows('experts_modals') ): the_row(); $experts_index++; ?>
@@ -30,8 +30,7 @@
       <div class="experts__text">
         <h3><?php the_sub_field('name'); ?></h3>
         <h5><?php the_sub_field('position'); ?></h5>
-        <p><?php the_sub_field('first_paragraph'); ?></p>
-        <p><?php the_sub_field('second_paragraph'); ?></p>
+        <p><?php the_sub_field('text'); ?></p>
       </div>
     </div>
   </section>
