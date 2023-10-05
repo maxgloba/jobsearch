@@ -45,13 +45,13 @@
     @media(min-width:992px){
       margin-top: 0;
     }
+    br{
+      display: none;
+    }
     p{
       margin: 0;
       display: flex;
       flex-direction: column;
-    }
-    .wpcf7-form-control{
-      margin-bottom: 30px;
     }
     .wpcf7-submit{
       margin-bottom: 0;
@@ -73,4 +73,37 @@
       }
     }
   }
+}
+
+
+.wpcf7-form-control-wrap{
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+  .wpcf7-not-valid-tip{
+    position: absolute;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .wpcf7-response-output{
+    background: yellow;
+  }
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output{
+  background: var(--yellow);
+  color: var(--dark);
+  font-size: 14px;
+  margin: 15px 0 0;
+  padding: 15px;
+  text-align: center;
+}
+
+.wpcf7 form.failed .wpcf7-response-output, .wpcf7 form.aborted .wpcf7-response-output{
+  background: #dc3232;
+  color: var(--white);
+  font-size: 14px;
+  margin: 15px 0 0;
+  padding: 15px;
+  text-align: center;
 }
